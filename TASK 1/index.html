@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MonksBuild – Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== MAIN LANDING SCREEN ===== -->
+  <div id="screen-main" class="screen screen--active">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="topbar-title">
+        MonksBuild <span class="dot">.</span> Fix <span class="dot">.</span> Escape.
+      </div>
+      <button id="join-btn" class="topbar-btn">Join Now</button>
+    </header>
+
+    <main class="page">
+      <!-- Center hero card -->
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Build Under Pressure</h1>
+          <p>Speed, precision, and creativity decide the winner.</p>
+        </div>
+      </section>
+
+      <!-- Stats row -->
+      <section class="stats">
+        <div class="stat">
+          <span class="stat-value">15+</span>
+          <span class="stat-label">Minutes</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">30</span>
+          <span class="stat-label">Points</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1</span>
+          <span class="stat-label">Winner</span>
+        </div>
+      </section>
+
+      <!-- Modules section -->
+      <section class="modules">
+        <div class="modules-top">
+          <div class="feature-card">
+            <h3>Precision</h3>
+            <p>Exact spacing and alignment.</p>
+          </div>
+
+          <div class="feature-card feature-card--highlight">
+            <h3>Speed</h3>
+            <p>Time works against you.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Focus</h3>
+            <p>No distractions allowed.</p>
+          </div>
+        </div>
+
+        <h2 class="modules-title">Challenge Modules</h2>
+
+        <div class="modules-grid">
+          <div class="module-pill">Layout Replication</div>
+          <div class="module-pill">CSS Styling</div>
+          <div class="module-pill module-pill--highlight">Glass UI</div>
+
+          <div class="module-pill">Color Theory</div>
+          <div class="module-pill">Spacing Logic</div>
+          <div class="module-pill">Time Control</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 MonksBuild. Website designed & built by Monks team.</p>
+    </footer>
+  </div>
+
+  <!-- ===== PREPARING SCREEN ===== -->
+  <div id="screen-preparing" class="screen">
+    <main class="center-wrapper">
+      <div class="card-loading">
+        <div class="loader-ring">
+          <div class="loader-inner"></div>
+        </div>
+        <h1>Preparing Your Challenge</h1>
+        <p>You will be redirected in <span id="countdown">5</span> seconds</p>
+        <button id="skip-btn" class="link-btn">Skip &amp; continue</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- ===== CHALLENGE UNLOCKED SCREEN ===== -->
+  <div id="screen-unlocked" class="screen">
+    <main class="center-wrapper center-wrapper--gradient">
+      <div class="card-unlocked">
+        <h1>Challenge Unlocked 🚀</h1>
+        <p>Your timer starts now. Good luck!</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
